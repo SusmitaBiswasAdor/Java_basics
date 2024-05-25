@@ -40,16 +40,38 @@ public class loop_j {
               System.out.println("Using do-while: "+Arrays.toString(arr2));
 
 
-             //CREATING AN ARRAY OF 10 ELEMENTS AND ADDING 1 TO EACH ELEMENT USING FOR LOOP
-             Scanner sc = new Scanner(System.in);
-             int[] arr3 = new int[10]; //array of 10 elements
-             for (int i=0; i<=9;i++)  //0 to 9
-             {
-              System.out.print("Enter the values of arr3["+i+"]:");
-              int z = sc.nextInt();
-              arr3[i] =z+1;
-             }
-              System.out.println("The array is: "+Arrays.toString(arr3));
+             //       //CREATING AN ARRAY OF 10 ELEMENTS AND ADDING 1 TO EACH ELEMENT USING FOR LOOP
+       //       Scanner sc = new Scanner(System.in);
+       //       int[] arr3 = new int[10]; //array of 10 elements
+       //       for (int i=0; i<=9;i++)  //0 to 9
+       //       {
+       //        System.out.print("Enter the values of arr3["+i+"]:");
+       //        int z = sc.nextInt();
+       //        arr3[i] =z+1;
+       //       }
+       //        System.out.println("The array is: "+Arrays.toString(arr3));
+
+              //  Break statement:
+              // int i1 = 0;
+              // while(true)
+              // {
+              //        System.out.println(i1);
+              //        i1=i1+1;
+              //        if (i1>10) {
+              //               break; //this will terminate the loop
+              //        }
+
+              //continue statement:
+              //here from 0 to 5 will be printed but 2 will be skipped using for loop
+              for (int i3=0; i3<=5 ;i3++)
+              {
+                     if (i3==2)
+                     {
+                            continue;
+                     }
+                     System.out.println(i3);
+              }
+
 
 
 
